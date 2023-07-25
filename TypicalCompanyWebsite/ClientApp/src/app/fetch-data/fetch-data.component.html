@@ -1,0 +1,20 @@
+<h1 id="tableLabel">{{title}}</h1>
+
+<p *ngIf="!forecasts"><em>Loading...</em></p>
+
+<table class='table table-striped' aria-labelledby="tableLabel" *ngIf="forecasts">
+  <thead>
+    <tr>
+      <td>Отдел</td>
+      <td>ФИО</td>
+      <td>Дата рождения</td>
+      <td>Дата устройства на работу</td>
+      <td>Заработная плата</td>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <data-row />
+    </tr>
+  </tbody>
+</table>
